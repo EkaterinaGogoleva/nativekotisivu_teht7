@@ -1,8 +1,9 @@
 <ActionBar>
-  <Label text="Home"></Label>
+  <Label text="Minä"></Label>
 </ActionBar>
-
-<GridLayout>
+<!--меняю здесь-->
+<StackLayout orientation="vertical">
+  <Image src="~/app/images/me.png"></Image>
   <ListView [items]="items">
     <ng-template let-item="item">
       <StackLayout [nsRouterLink]="['../item', item.id]">
@@ -10,4 +11,4 @@
       </StackLayout>
     </ng-template>
   </ListView>
-</GridLayout>
+</StackLayout>
